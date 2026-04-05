@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: qvra front door
+    url: https://github.com/qvra/qvra
+    about: Start from the field router before opening a generic issue.
+  - name: qvra pulse
+    url: https://github.com/qvra/pulse
+    about: Check current visible movement before proposing structural changes.

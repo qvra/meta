@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a concrete defect with observable impact.
+title: "[bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: surface
+    attributes:
+      label: Surface
+      description: Which repo, file, route, or command is affected?
+      placeholder: run/tools/hello, show/demos/anchor-map, site/index.html
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Exact commands, inputs, and environment details.
+      placeholder: |
+        bash -lc 'set -euo pipefail; ...'
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Consequence
+      description: Why does this matter to motion, route clarity, utility, or trust?
+    validations:
+      required: true

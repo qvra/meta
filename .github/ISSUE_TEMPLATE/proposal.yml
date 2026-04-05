@@ -1,0 +1,42 @@
+name: Proposal
+description: Propose a new surface, route, refinement, or correction.
+title: "[proposal] "
+labels:
+  - proposal
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should become easier, sharper, faster, or clearer?
+    validations:
+      required: true
+  - type: textarea
+    id: role
+    attributes:
+      label: Field role
+      description: What role does this serve?
+      placeholder: entry, use, reuse, comparison, experimentation, watchability, recurrence, sponsorability
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: Repo fit
+      description: Why does this belong in this repo and not a neighboring one?
+    validations:
+      required: true
+  - type: textarea
+    id: route
+    attributes:
+      label: Route impact
+      description: How does this change first contact, route density, or field legibility?
+    validations:
+      required: true
+  - type: textarea
+    id: forbiddens
+    attributes:
+      label: Forbidden-risk check
+      description: Which forbidden failure modes does this avoid?
+    validations:
+      required: true
